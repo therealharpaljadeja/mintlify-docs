@@ -25,6 +25,12 @@
       "url": "https://github.com/celo-org/social-connect/discussions"
     }
   ],
+  "tabs": [
+    {
+      "name": "Protocol",
+      "url": "protocol"
+    }
+  ],
   "anchors": [
     {
       "name": "Report an Issue",
@@ -55,6 +61,36 @@
     {
       "group": "Contract Addresses",
       "pages": ["contract/index"]
+    },
+    {
+      "group": "Protocol",
+      "pages": ["protocol/introduction"]
+    },
+    {
+      "group": "Architecture",
+      "pages": [
+        {
+          "group": "ODIS",
+          "pages": [
+            "protocol/architecture/odis/introduction",
+            {
+              "group": "Domains",
+              "pages": [
+                "protocol/architecture/odis/domains/introduction",
+                "protocol/architecture/odis/domains/sequential-delay-domain"
+              ]
+            },
+            {
+              "group": "Use Cases",
+              "pages": [
+                "protocol/architecture/odis/usecases/key-hardening",
+                "protocol/architecture/odis/usecases/phone-number-privacy"
+              ]
+            }
+          ]
+        },
+        "protocol/architecture/federatedattestations"
+      ]
     }
   ],
   "footerSocials": {

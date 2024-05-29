@@ -1,11 +1,58 @@
 ---
 title: Introduction to SocialConnect Protocol
+description: Introduction to SocialConnect Protocol
 ---
 
 The goals of this attestation protocol are to increase adoption of identity mappings, and encourage network effects of shared cross-application identity attestations. To this end, we have made it possible for anyone to permissionlessly become an issuer of attestations.
 
-<video
-  controls
-  className="w-full aspect-video"
-  src="https://www.loom.com/share/8afddd73ba324ec18aeb63fc96d568f9"
-></video>
+<iframe
+  src="https://www.loom.com/embed/8afddd73ba324ec18aeb63fc96d568f9?sid=e4551a09-4db3-4b63-8b8e-a9d6c4a86209"
+  frameborder="0"
+  allowfullscreen
+  width="100%"
+  height="400px"
+></iframe>
+
+## Architecture
+
+<CardGroup cols={2}>
+<Card title="ODIS" icon="server" iconType="regular" href="/protocol/architecture/odis">
+  The Oblivious Decentralized Identifier Service (ODIS) allows for privacy preserving identifiers by implementing a rate limited oblivious pseudorandom function (OPRF).
+</Card>
+
+<Card title="FederatedAttestations.sol" icon="file-contract" iconType="regular" href="/protocol/architecture/federatedattestations">
+  FederatedAttestations.sol is the onchain contract that acts a registry of attestations. All the mappings of obfuscated identifiers to their wallet address is stored here.
+</Card>
+
+</CardGroup>
+
+## User Flows
+
+<CardGroup cols={2}>
+<Card title="Register User" icon="user-plus" iconType="regular" href="#">
+  Check out the guides to lookup, register and revoke attestations.
+</Card>
+
+<Card title="Lookup User" icon="magnifying-glass" iconType="regular" href="#">
+  Check out how the SocialConnect protocol works
+</Card>
+
+<Card
+  title="Revoke User"
+  icon="user-minus"
+  iconType="regular"
+  href="#"
+>
+  Take a look at an Next.js example project with SocialConnect support
+</Card>
+
+<Card
+  title="Send money to user on a different wallet"
+  icon="money-bill-1-wave"
+  iconType="regular"
+  href="https://github.com/celo-org/socialconnect-template"
+>
+  Understand all the terms associated with SocialConnect protocol
+</Card>
+
+</CardGroup>
